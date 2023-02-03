@@ -17,10 +17,9 @@ import java.util.Objects;
 @Getter
 @ToString
 @Table(indexes = {
-//        @Index(columnList = "title"),
         @Index(columnList = "content"),
         @Index(columnList = "createdAt"),
-        @Index(columnList = "createdBy"),
+        @Index(columnList = "createdBy")
 })
 @EntityListeners(AuditingEntityListener.class)
 @Entity
